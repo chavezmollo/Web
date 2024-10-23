@@ -1,0 +1,294 @@
+.work-sans-fuente{
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-header {
+    font-family: "Montserrat";
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-header .logo img {
+    width: 5rem;
+    height: 4rem;
+}
+
+.contenedor-header .logo {
+    text-align: center;
+    color: rgba(98, 120, 247, 1);
+    margin: 0 1rem;
+}
+
+.contenedor-header .logo a {
+    color: rgba(98, 120, 247, 1);
+    text-decoration: none;
+}
+
+.contenedor-header nav {
+    flex-grow: 1;
+}
+
+.contenedor-header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.contenedor-header nav ul li a {
+    color: rgba(98, 120, 247, 1);
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-responsive {
+    display: none;
+    background: rgba(98, 120, 247, 1); 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.nav-responsive:hover {
+    background-color: rgba(98, 110, 247, 1); 
+    transform: scale(1.05);
+}
+/* Estilos para el contenedor principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    flex-wrap: wrap;
+}
+.header {
+    font-family: "Prata";
+    text-align: center;
+    color: rgba(98, 120, 247, 1);
+    margin: 3rem;
+    font-size: xx-large;
+}
+
+/* Estilos para las secciones */
+.container, .container-2 {
+    width: 48%; 
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Colores de fondo */
+.container {
+    background-color: #ffcccb; 
+}
+
+.container-2 {
+    background-color: #add8e6; 
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Imagen alineada a la izquierda */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+
+/* Información alineada a la derecha */
+.info {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.info p {
+    margin: 0.5rem 0;
+}
+
+/* Estilos para los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: rgba(98, 120, 247, 1); 
+    color: white; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos para los iconos de redes sociales */
+.footer .social-icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; 
+    transition: color 0.3s; 
+}
+
+.footer .social-icons a:hover {
+    color: #1da1f2; 
+}
+
+/* Estilos para el contenedor developer */
+.footer .developer {
+    text-align: right; 
+}
+
+.footer .developer p {
+    margin: 0; 
+    font-size: 14px; 
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(98, 120, 247, 1); 
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #fff;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav .responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #fff;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #000000;
+        padding: 10px 0;
+    }
+
+  }
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container, .container-2 {
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 1rem; 
+    }
+
+    .info {
+        text-align: center; 
+    }
+}

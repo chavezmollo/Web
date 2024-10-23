@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- SEGUNDA FUENTE -->
+    <script src="icon/js/brands.min.js"></script>
+    <script src="icon/js/solid.min.js"></script>
+</head>
+<body>
+    <!-- Encabezado y navegación -->
+    <header class="contenedor-header">
+        <div class="logo">
+            <a href="#"><img src="./assets/img/logoCetal.png" alt="Logo de la institución"></a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="./index.html" onclick="seleccionar()">Inicio</a></li>
+                <li><a href="./html/sobreNosotros.html" onclick="seleccionar()">Sobre nosotros</a></li>
+                <li><a href="#valores" onclick="seleccionar()">Valores</a></li>
+                <li><a href="./html/ley348.html" onclick="seleccionar()">Ley 348</a></li>
+                <li><a href="./html/videos.html" onclick="seleccionar()">Videos</a></li>
+            </ul>
+        </nav>
+        <button class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="titulo">
+            <div id="contenedor-texto">
+                <h1>Educación con valores y libre de violencia</h1>
+                <p>Sistemas Informáticos</p>
+            </div>
+            <figure class="font">
+                <img src="./assets/img/Imagem duotone@2x.svg" alt="Imagen representativa">
+            </figure>
+        </section>
+
+        <!-- Sección de valores -->
+        <section id="valores">
+            <h2>Valores</h2>
+            <div class="card-container" id="background-pink">
+                <article class="card">
+                    <figure class="card-header">
+                        <img src="./assets/img/verde/armonia.jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'armonia')">
+                            <h3>Armonía</h3>
+                        </a>
+                        <p>Vivir en paz con nosotros mismos, con los demás y con el entorno nos lleva a un equilibrio duradero.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header">
+                        <img src="./assets/img/verde/respeto (1).jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'respeto')">
+                            <h3>Respeto</h3>
+                        </a>
+                        <p>Valorar las diferencias y tratar a todos con dignidad y consideración.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header">
+                        <img src="./assets/img/verde/equidadSocial.png" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'equidadsocialenparticipacion')">
+                            <h3>Equidad social en participacion</h3>
+                        </a>
+                        <p>Cada voz cuenta; la inclusión fortalece la democracia y la justicia.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header">
+                        <img src="./assets/img/verde/medioAmbiente (2).jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'cuidadodelmedioambiente')">
+                            <h3>Cuidado del medio ambiente</h3>
+                        </a>
+                        <p>Proteger nuestro planeta es cuidar de nosotros mismos y de las futuras generaciones.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="card-container" id="background-yellow">
+                <article class="card">
+                    <figure class="card-header2">
+                        <img src="./assets/img/azul/unidad (2).jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="../html/valores.html" onclick="sessionStorage.setItem('valor', 'unidad')">
+                            <h3>Unidad</h3>
+                        </a>
+                        <p>Juntos podemos lograr más; la fuerza está en la colaboración y el trabajo en equipo.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header2">
+                        <img src="./assets/img/azul/responsabilidad.jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'responsabilidad')">
+                            <h3>Responsabilidad</h3>
+                        </a>
+                        <p>Asumir nuestras acciones con compromiso es clave para construir un mejor futuro.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header2">
+                        <img src="./assets/img/azul/responsabilidad (2).jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'transparencia')">
+                            <h3>Transparencia</h3>
+                        </a>
+                        <p>Actuar con honestidad y claridad fomenta la confianza y el respeto mutuo.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header2">
+                        <img src="./assets/img/azul/libertad.jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'libertad')">
+                            <h3>Libertad</h3>
+                        </a>
+                        <p>Es el derecho de vivir con autonomía, eligiendo nuestro propio camino con responsabilidad.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="card-container" id="background-red">
+                <article class="card">
+                    <figure class="card-header3">
+                        <img src="./assets/img/rojo/igualdad.png" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'equidadeigualdaddegenero')">
+                            <h3>Igualdad</h3>
+                        </a>
+                        <p>Todos merecemos las mismas oportunidades y derechos, sin importar nuestras diferencias.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header3">
+                        <img src="./assets/img/rojo/solidaridad.avif" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'solidariadad')">
+                            <h3>Solidariadad</h3>
+                        </a>
+                        <p>Estar juntos en los momentos difíciles nos hace más fuertes y nos une como comunidad.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header3">
+                        <img src="./assets/img/rojo/pasion.jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'pasion')">
+                            <h3>Pasion</h3>
+                        </a>
+                        <p>La entrega y el amor por lo que hacemos nos impulsa a alcanzar nuestros sueños.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header3">
+                        <img src="./assets/img/rojo/valentia.jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'valentia')">
+                            <h3>Valentia</h3>
+                        </a>
+                        <p>Es atreverse a enfrentar los desafíos con coraje, incluso cuando sentimos miedo.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="card-container" id="background-green">
+                <article class="card">
+                    <figure class="card-header4">
+                        <img src="./assets/img/morado/justicia.jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'justicia')">
+                            <h3>Justicia</h3>
+                        </a>
+                        <p>Actuar con equidad y defender lo que es correcto para todos.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header4">
+                        <img src="./assets/img/morado/sabiduria (1).jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'sabiduria')">
+                            <h3>Sabiduria</h3>
+                        </a>
+                        <p>Vivir en paz con nosotros mismos, con los demás y con el entorno nos lleva a un equilibrio duradero.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header4">
+                        <img src="./assets/img/morado/compacion (1).jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'compasion')">
+                            <h3>Compacion</h3>
+                        </a>
+                        <p>Vivir en paz con nosotros mismos, con los demás y con el entorno nos lleva a un equilibrio duradero.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header4">
+                        <img src="./assets/img/morado/espiritualidad.png" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'espiritualidad')">
+                            <h3>Espiritualidad</h3>
+                        </a>
+                        <p>Buscar un propósito más profundo en la vida y conectar con lo trascendental.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="card-container" id="background-orange">
+                <article class="card">
+                    <figure class="card-header5">
+                        <img src="./assets/img/amarillo/dignidad.gif" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'dignidad')">
+                            <h3>Dignidad</h3>
+                        </a>
+                        <p>Reconocer el valor inherente de cada persona, independientemente de su condición o circunstancia.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header5">
+                        <img src="./assets/img/amarillo/alegria.jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'alegria')">
+                            <h3>Alegria</h3>
+                        </a>
+                        <p>Encontrar felicidad en las pequeñas cosas y compartirla con los demás ilumina nuestras vidas.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header5">
+                        <img src="./assets/img/amarillo/optimismo.jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'optimismo')">
+                            <h3>Optimismo</h3>
+                        </a>
+                        <p>Creer que lo mejor está por venir nos motiva a seguir adelante con esperanza.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header5">
+                        <img src="./assets/img/amarillo/inovacion (2).jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'innovacion')">
+                            <h3>Innovacion</h3>
+                        </a>
+                        <p>Crear nuevas ideas y soluciones para mejorar continuamente nuestra forma de vivir.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="card-container" id="background-purple">
+                <article class="card">
+                    <figure class="card-header6">
+                        <img src="./assets/img/naranja/igualdaddeGenero (1).jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'equidadeigualdaddegenero')">
+                            <h3>Equidad e igualdad de genero</h3>
+                        </a>
+                        <p>Reconocer y promover los mismos derechos y oportunidades para todos, sin importar el género.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header6">
+                        <img src="./assets/img/naranja/reciprocidad.jpg" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'reciprocidad')">
+                            <h3>Reciprocidad</h3>
+                        </a>
+                        <p>Dar y recibir en un intercambio justo, fortaleciendo los lazos de cooperación.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header6">
+                        <img src="./assets/img/naranja/creatividad.png" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'creatividad')">
+                            <h3>Creatividad</h3>
+                        </a>
+                        <p>Es la habilidad de generar ideas originales y soluciones únicas.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <figure class="card-header6">
+                        <img src="./assets/img/naranja/entusiasmo.png" alt="Armonía">
+                    </figure>
+                    <div class="card-body">
+                        <a href="./html/valores.html" onclick="sessionStorage.setItem('valor', 'entusiasmo')">
+                            <h3>Entusiasmo</h3>
+                        </a>
+                        <p>La energía y el deseo de hacer cosas con alegría contagia a quienes nos rodean.</p>
+                    </div>
+                </article>
+            </div>
+    
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <a href="#" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="developer">
+            <p>Desarrollado por:</p>
+            <p>John Axel Vasquez Herrera</p>
+            <p>Maria Alejandra Chavez Mollo</p>
+        </div>
+    </footer>
+
+    <script>
+        function guardarValor(valor) {
+            sessionStorage.setItem('valor', valor);
+        }
+    </script>
+    <script src="icon/js/fontawesome.js"></script>
+    <script src="./js/body.js"></script>
+</body>
+</html>

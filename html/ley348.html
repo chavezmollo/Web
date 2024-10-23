@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma</title>
+    <link rel="stylesheet" href="../css/styles2.css">
+    <!-- SEGUNDA FUENTE -->
+    <script src="icon/js/brands.min.js"></script>
+    <script src="icon/js/solid.min.js"></script>
+</head>
+<body>
+    <!-- Encabezado y navegación -->
+    <header class="contenedor-header">
+        <div class="logo">
+            <a href="#"><img src="../assets/img/logoCetal.png" alt="Logo de la institución"></a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html" onclick="seleccionar()">Inicio</a></li>
+                <li><a href="../html/sobreNosotros.html" onclick="seleccionar()">Sobre nosotros</a></li>
+                <li><a href="#valores" onclick="seleccionar()">Valores</a></li>
+                <li><a href="#valores" onclick="seleccionar()">Ley 348</a></li>
+                <li><a href="../html/videos.html" onclick="seleccionar()">Videos</a></li>
+            </ul>
+        </nav>
+        <button class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="titulo">
+            <div id="contenedor-texto">
+                <h1>Educación con valores y libre de violencia</h1>
+                <p>Sistemas Informáticos</p>
+            </div>
+            <figure class="font">
+                <img src="../assets/img/Imagem duotone@4x.svg" alt="Imagen representativa">
+            </figure>
+        </section>
+    <!-- Sección de valores -->
+        <section id="valores">
+        <h2>Ley 348</h2>
+        </section>
+
+        <section class="card-container" id="background-pink">
+            <article class="card">
+                <figure class="card-header">
+                    <img src="../assets/img/rojo/igualdad.png" alt="Imagen circular">
+                </figure>
+                <div class="card-body">
+                    <a href="#">
+                        <h3>Ley 348</h3>
+                    </a>
+                    <button class="button" onclick="location.href='../html/articuloLey348.html'; return false;">
+                        Leer artículo
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="card-header2">
+                    <img src="../assets/img/rojo/solidaridad.jpg" alt="Imagen circular">
+                </figure>
+                <div class="card-body">
+                    <a href="#">
+                        <h3 style="color: rgba(98, 120, 247, 1);
+                        ">La prevención de la violencia es tarea de todos, comenzando por la educación.</h3>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="card-container" id="background-yellow">
+            <article class="card">
+                <figure class="card-header3">
+                    <img src="../assets/img/rojo/pasion.jpg" alt="Imagen circular">
+                </figure>
+                <div class="card-body">
+                    <a href="#">
+                        <h3 style="color: rgba(98, 120, 247, 1);
+                        ">La justicia para las víctimas es un derecho fundamental que no debe ser negado ni retrasado.</h3>
+                    </a>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="card-header4">
+                    <img src="../assets/img/azul/libertad.jpg" alt="Imagen circular">
+                </figure>
+                <div class="card-body">
+                    <a href="#">
+                        <h3>Todos tenemos la responsabilidad de construir un mundo donde las mujeres vivan libres y seguras.</h3>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <a href="#" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="developer">
+            <p>Desarrollado por:</p>
+            <p>John Axel Vasquez Herrera</p>
+            <p>Maria Alejandra Chavez Mollo</p>
+        </div>
+    </footer>
+
+    <script src="icon/js/fontawesome.js"></script>
+    <script src="../js/body.js"></script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+.work-sans-fuente{
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.contenedor-header {
+    font-family: "Montserrat";
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-header .logo img {
+    width: 5rem;
+    height: 4rem;
+}
+
+.contenedor-header .logo {
+    text-align: center;
+    color: rgba(135, 22, 255, 1);
+    margin: 0 1rem;
+}
+
+.contenedor-header .logo a {
+    color: rgba(135, 22, 255, 1);
+    text-decoration: none;
+}
+
+.contenedor-header nav {
+    flex-grow: 1;
+}
+
+.contenedor-header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.contenedor-header nav ul li a {
+    color: rgba(135, 22, 255, 1);
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-responsive {
+    display: none;
+    background: rgba(135, 22, 255, 1); 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.nav-responsive:hover {
+    background-color: rgba(135, 0, 240, 1);
+    transform: scale(1.05);
+}
+
+/* Sección del título */
+.titulo {
+    font-family: "Prata";
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    background-color: rgba(135, 22, 255, 1);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del texto */
+#contenedor-texto {
+    max-width: 50%;
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+}
+
+/* Estilo del título principal */
+#contenedor-texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo del párrafo */
+#contenedor-texto p {
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+}
+
+/* Contenedor de la imagen */
+.font {
+    max-width: 40%;
+    align-self: flex-start;
+}
+
+.font img {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#valores {
+    margin: 1rem;
+}
+#valores h2 {
+    font-family: "Prata";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    height: 33vh; 
+    text-decoration: underline; 
+    margin: 0; 
+    font-size: 3rem;
+    color: rgba(135, 22, 255, 1);
+}
+
+#background-pink {
+    background: linear-gradient(to right, rgba(220, 110, 190, 0.15) 50%, rgba(232, 248, 255, 1) 50%);
+    padding: 35px 0; 
+    margin: 0; 
+}
+#background-yellow {
+    background: linear-gradient(to right, rgba(232, 248, 255, 1) 50%, rgba(220, 110, 190, 0.15) 50%);/* Color de fondo rosa */
+    padding: 35px 0; 
+    margin: 0; 
+}
+/* Contenedor de tarjetas */
+.card-container {
+    display: flex;
+    justify-content: space-around; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+    background: rgba(217, 247, 233, 1); 
+}
+
+/* Estilo de la tarjeta */
+/* Efecto de zoom para .card */
+.card {
+    width: 435px;
+    height: auto;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Zoom al pasar el mouse */
+.card:hover {
+    transform: scale(1.05); 
+}
+
+/* Encabezado de la tarjeta */
+.card-header { 
+    background: rgba(219, 110, 191, 1);
+    height: 8rem; 
+    position: relative;
+}
+.card-header2 { 
+    background:rgba(130, 207, 250, 1);
+    height: 8rem;
+    position: relative;
+}
+.card-header3 { 
+    background: rgba(130, 207, 250, 1);
+    height: 8rem;
+    position: relative;
+}
+.card-header4 { 
+    background: rgba(219, 110, 191, 1);
+    height: 8rem;
+    position: relative;
+}
+
+.card-header img {
+    width: 10rem;
+  height: 9rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -31px;
+  left: calc(50% - 80px);
+}
+.card-header2 img {
+    width: 10rem;
+  height: 9rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -31px;
+  left: calc(50% - 80px);
+}
+.card-header3 img {
+    width: 10rem;
+  height: 9rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -31px;
+  left: calc(50% - 80px);
+}
+.card-header4 img {
+    width: 10rem;
+    height: 9rem;
+    border-radius: 50%;
+    position: absolute;
+  bottom: -31px;
+  left: calc(50% - 80px);
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+    padding: 20px;
+    background-color: white;
+    padding-top: 60px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; 
+}
+
+.card-body a {
+    text-decoration: none; 
+    margin: 0; 
+}
+
+.card-body h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem; 
+    font-weight: 600;
+    text-align: center;
+    color: rgba(135, 22, 255, 1); 
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: rgba(33, 33, 33, 1);
+    font-size: 1.2rem; 
+    margin: 0;
+}
+
+/* Estilo del botón */
+.button {
+    background-color: rgba(135, 22, 255, 1);
+    color: white;
+    padding: 21px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgb(97, 7, 192);
+} 
+/* Estilos para el pie de página */
+.footer {
+    background-color: rgba(135, 22, 255, 1); 
+    color: white; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos para los iconos de redes sociales */
+.footer .social-icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; 
+    transition: color 0.3s; 
+}
+
+.footer .social-icons a:hover {
+    color: #7218c5; 
+}
+
+/* Estilos para el contenedor developer */
+.footer .developer {
+    text-align: right; 
+}
+
+.footer .developer p {
+    font-family: "Montserrat";
+    margin: 0; 
+    font-size: 14px; 
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(135, 22, 255, 1); 
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #fff;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav .responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #fff;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #000000;
+        padding: 10px 0;
+    }
+
+  }
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .card {
+        width: 80%; 
+    }
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    .titulo {
+        flex-direction: column;
+        text-align: center;
+    }
+    #contenedor-texto {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    .font {
+        max-width: 100%;
+    }
+}
+}
